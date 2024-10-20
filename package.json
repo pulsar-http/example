@@ -10,7 +10,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@pulsar-http/core": "^0.2.0",
+    "@pulsar-http/core": "^0.3.0",
     "pg": "^8.13.0",
     "zod": "^3.23.8"
   }
