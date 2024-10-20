@@ -1,0 +1,15 @@
+version: '4.0'
+services:
+  db:
+    build: .
+    container_name: pulsar_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: pulsar_user
+      POSTGRES_PASSWORD: pulsar_password
+      POSTGRES_DB: pulsar_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:

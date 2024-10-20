@@ -1,0 +1,17 @@
+{
+  "name": "@pulsar-http/core",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "^8.11.10"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@pulsar-http/core": "^0.2.0",
+    "pg": "^8.13.0",
+    "zod": "^3.23.8"
+  }
+}
