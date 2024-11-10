@@ -1,4 +1,4 @@
-import type { User } from "../ports/user.ts";
+import type { User } from "../ports/user";
 import { getClient } from '../adapters/db';
 
 export const getAllUsers = async () => {

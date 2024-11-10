@@ -1,7 +1,7 @@
 import { start } from '@pulsar-http/core';
 import { routes } from './application/routes';
-import { getClient } from "./adapters/db.ts";
-import { middlewares } from "./application/middlewares.ts";
+import { getClient } from "./adapters/db";
+import { middlewares } from "./application/middlewares";
 
 (async () => {
     try {

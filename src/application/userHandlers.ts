@@ -1,5 +1,5 @@
 import { error, json, type RouterHandler } from "@pulsar-http/core";
-import type { User } from "../ports/user.ts";
+import type { User } from "../ports/user";
 import { getUsers, getUser, addUser, modifyUser, removeUser } from '../core/userService';
 
 export const handleGetUsers = async () => {

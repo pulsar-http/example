@@ -6,7 +6,10 @@ It uses hexagonal architecture but it's not a requirement.
 
 The app contains a simple user service that allows you to create, read, update and delete users.
 
-It also uses authentication with GitHub and body validation system.
+It also uses: 
+- Authentication with GitHub
+- Body validation with Zod
+- Swagger documentation generation at runtime
 
 ## Requirements
 

@@ -1,4 +1,4 @@
-import type { User } from "../ports/user.ts";
+import type { User } from "../ports/user";
 import { getAllUsers, getUserById, createUser, updateUser, deleteUser } from '../domain/userRepository';
 
 export const getUsers = async () => {
