@@ -1,4 +1,5 @@
-import { authMiddleware, githubAuthProvider } from "@pulsar-http/core";
+import { authMiddleware } from "@pulsar-http/core";
+import githubAuthProvider from '@auth/core/providers/github';
 
 export const auth = authMiddleware({
     providers: [
