@@ -1,6 +1,6 @@
 import { html, getSession, type RouterHandler } from "@pulsar-http/core";
 
-export const handleGetHome: RouterHandler = async (request) => {
+export const handleGetHome: RouterHandler = async ({ request }) => {
     const session = await getSession(request);
 
     if (!session?.user) {

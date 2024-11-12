@@ -11,7 +11,7 @@ export const handleGetUsers = async () => {
   }
 };
 
-export const handleGetUser: RouterHandler = async (_, pathParams) => {
+export const handleGetUser: RouterHandler = async ({ pathParams }) => {
   try {
     const user = await getUser(pathParams.id);
     if (!user) {
@@ -24,7 +24,7 @@ export const handleGetUser: RouterHandler = async (_, pathParams) => {
   }
 };
 
-export const handleAddUser: RouterHandler<User> = async (_, __, body) => {
+export const handleAddUser: RouterHandler<User> = async ({ body }) => {
   try {
     const user = await addUser(body);
     return json(user);
@@ -33,7 +33,7 @@ export const handleAddUser: RouterHandler<User> = async (_, __, body) => {
   }
 };
 
-export const handleModifyUser: RouterHandler<Partial<User>> = async (_, pathParams, body) => {
+export const handleModifyUser: RouterHandler<Partial<User>> = async ({ pathParams, body }) => {
   try {
     const user = await modifyUser(pathParams.id, body);
     if (!user) {
@@ -46,7 +46,7 @@ export const handleModifyUser: RouterHandler<Partial<User>> = async (_, pathPara
   }
 };
 
-export const handleRemoveUser: RouterHandler = async (_, pathParams) => {
+export const handleRemoveUser: RouterHandler = async ({ pathParams }) => {
   try {
     const user = await removeUser(pathParams.id);
     if (!user) {
