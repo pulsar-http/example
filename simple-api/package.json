@@ -1,5 +1,6 @@
 {
   "name": "@pulsar-http/example",
+  "description": "All examples projects for @pulsar-http/core",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
